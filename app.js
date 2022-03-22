@@ -77,6 +77,9 @@ const askHello = () => {
     .then((value) => {
       document.getElementById("hello-result").innerText =
         value.queryString.greetings;
+    })
+    .catch((err) => {
+      console.log(err);
     });
 };
 btn.addEventListener("click", askHello);
