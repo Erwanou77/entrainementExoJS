@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="body">
+    <header>
+        <h1>Exo JS Erwan</h1>
+    </header>
+    <section class="container text-center" id="sec-1">
+        <div class="row gap-3">
+            <!----------------------------------------------------------------
+            
+                Affichage du mot de passe
+            
+            ----------------------------------------------------------------->
+            <div class="col-5 card flex">
+                <div>
+                    <h3>Affichage Mot de passe</h3>
+                </div>
+                <div>
+                    <h6>Cliquez sur voir pour afficher votre mdp</h6>
+                    <div class="input-group mb-3">
+
+                        <input type="password" class="form-control" id="test" placeholder="Mot de passe">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" id="click" type="button">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------------------------------
+            
+                Compteur de click
+            
+            ----------------------------------------------------------------->
+            <div class="col-5 card flex">
+                <div>
+                    <h3>Compteur de click</h3>
+                </div>
+                <div>
+                    <h6>Cliquez la zone blanche</h6>
+                    <div class="cadre" id="appui"></div>
+                    <h6>Vous avez effectué : <span class="span"></span></h6>
+                </div>
+            </div>
+            <!----------------------------------------------------------------
+            
+                Récupération des données
+            
+            ----------------------------------------------------------------->
+            <div class="col-5 card flex">
+                <div>
+                    <h3>Récupération données</h3>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Exemple select</label>
+                        <select class="form-control" id="gender">
+                            <option value="">Choisissez une valeur</option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </form>
+                <div id="result">
+                    <p><strong>Passer la souris sur le cadre</strong></p>
+                    Nom : <span id="res-name"></span><br />
+                    Genre : <span id="res-gender">Aucun genre</span><br />
+                    Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+                </div>
+            </div>
+            <!----------------------------------------------------------------
+            
+                API Recup DATA
+            
+            ----------------------------------------------------------------->
+            <div class="col-5 card flex">
+                <div>
+                    <h3>API Recup DATA</h3>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="ask-hello">Dis bonjour</button>
+                    <div id="hello-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
