@@ -6,7 +6,7 @@
 :root {
   --bgBody: #d19274;
   --bgColorHead: #ffffff;
-  --bgColorCard: #f9fafe;
+  --bgColorCard: #ececec;
   --colorText: #1bbee2;
   --familyTitle: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -33,6 +33,11 @@ header {
   background-color: var(--bgColorCard);
   border: none;
   box-shadow: 10px 10px 15px 5px #000000;
+  transition: 0.4s;
+}
+#sec-1 .card:hover {
+  transition: 0.4s;
+  box-shadow: 10px 10px 15px 2px #000000;
 }
 #sec-1 .flex {
   display: flex;
